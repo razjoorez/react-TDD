@@ -7,9 +7,14 @@ describe("mapChooser", function() {
     //     let actual = mapChooser("portland");
     //     expect(actual).toEqual(expected);
     // }),
-    it("returns astoria.jpg when astoria is passed into it", function()  {
+    it("returns an image based on input given to it", function()  {
         let expected = "astoria.jpg";
         let actual = mapChooser("astoria");
+        expect(actual).toEqual(expected);
+    }),
+    it("returns default image when no input is given ", function()  {
+        let expected = "default.jpg";
+        let actual = mapChooser("");
         expect(actual).toEqual(expected);
     })
 
