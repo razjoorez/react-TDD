@@ -1,6 +1,6 @@
-function mapChooser() {
+function mapChooser(locationName) {
 
-    return "portland.jpg";
+    return (locationName + ".jpg");
 }
 
 export default mapChooser;
