@@ -1,6 +1,15 @@
-function Button () {
+import React, { Component} from 'react';
 
-    return "";
+class Button extends Component {
+
+    render() {
+        return(<Button>Store</Button>);
+    }
 }
+
+// function Button () {
+
+//     return "";
+// }
 
 export default Button;
