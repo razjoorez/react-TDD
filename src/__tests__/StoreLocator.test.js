@@ -9,6 +9,5 @@ describe("StoreLocator", function() {
 it('renders without carashing', () => {
     const div = document.createElement('div');
     ReactDOM.render(<StoreLocator />, div);
-})
-
+}); 
 });
