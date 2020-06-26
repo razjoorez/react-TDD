@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
-import StoreLocator from '../StoreLocator';
+import StoreLocator from '../containers/StoreLocator';
 
 // describe("", function() {
    
