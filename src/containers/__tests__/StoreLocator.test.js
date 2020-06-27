@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import StoreLocator from '../../components/StoreLocator';
+import StoreLocator from '../../containers/StoreLocator';
 import { Shallow, shallow } from 'enzyme';
 import ReactDOM from 'react-dom';
 
