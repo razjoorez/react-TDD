@@ -4,9 +4,10 @@ import React, { Component } from 'react';
 class Header extends Component {
     render() {
         return (
-            <div className="Header">
-                <p>This is the header</p>
-            </div>
+            <header>This is the header</header>
+            // <div className="Header">
+            //     <p>This is the header</p>
+            // </div>
         );
     }
 }
