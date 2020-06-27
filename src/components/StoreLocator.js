@@ -1,9 +1,9 @@
-import {Component} from 'react';
-import { render } from 'enzyme';
+import React , {Component} from 'react';
+
 
 class StoreLocator extends Component {
 render() {
-    return("");
+    return(" ");
 } 
 }
 

@@ -1,4 +1,4 @@
-import react, { Component } from 'react';
+import React, { Component } from 'react';
 import StoreLocator from '../../components/StoreLocator';
 import { Shallow, shallow } from 'enzyme';
 import ReactDOM from 'react-dom';
@@ -12,6 +12,6 @@ import ReactDOM from 'react-dom';
 
 //Isolated test with Enzyme
 it("StoreLocator should render wothout crashing", ()=> {
-    let mountedStorLocator;
-    mountedStorLocator = shallow(<StoreLocator/>);
+    let mountedStoreLocator;
+    mountedStoreLocator = shallow(<StoreLocator/>);
 })
