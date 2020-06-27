@@ -6,4 +6,4 @@ import Button from '../../components/Button';
 it("Should render without crashing", () => {
     let mountedButton;
     mountedButton = shallow(<Button/>);
-} )
+});
