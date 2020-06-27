@@ -33,7 +33,12 @@ it('render a header', () => {
 it('render two buttons', () => {
     const buttons = mountedStoreLocator.find('Button');
     expect(buttons.length).toBe(2);
-})
+});
+
+it('render a map', () => {
+    const maps = mountedStoreLocator.find('Map');
+    expect(maps.length).toBe(1);
+});
 
 });
 
