@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import StoreLocator from '../StoreLocator';
+import { shallow } from 'enzyme';
+import StoreLocator from '../containers/StoreLocator';
 
 // describe("", function() {
    
 // })
 
-it('renders without carashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<StoreLocator />, div);
+// it('renders without crashing', () => {
+//     const div = document.createElement('div');
+//     ReactDOM.render(<StoreLocator />, div);
+// });
+
+it('renders without crashing', () => {
+    let mountedStoreLocator = shallow(<StoreLocator />);
 });
