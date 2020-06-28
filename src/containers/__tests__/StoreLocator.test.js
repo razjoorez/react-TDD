@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import StoreLocator from '../../containers/StoreLocator';
 import { Shallow, shallow } from 'enzyme';
 import ReactDOM from 'react-dom';
