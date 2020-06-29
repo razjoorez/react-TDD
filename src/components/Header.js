@@ -4,7 +4,10 @@ import React, { Component } from 'react';
 class Header extends Component {
     render() {
         return (
-            <img src="./images/wired-brain-coffee-logo.png"  alt="logo"/>
+            <div>
+                  <img src="./images/wired-brain-coffee-logo.png"  alt="logo"/>
+            </div>
+          
         );
     }
 }

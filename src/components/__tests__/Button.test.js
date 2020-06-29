@@ -18,3 +18,19 @@ describe("Button", function(){
 
 });
 
+describe("When a location is passed to it" , function() {
+   let props;
+   let mountedButton;
+   beforeEach(()=> {
+       props = {
+            location: "Location1"
+       };
+       mountedButton = shallow(<Button  {...props} />)
+   });
+   it("displays the location", ()=> {
+      const locName = mountedButton.find('.location-button');
+       expect(locName.text()).toEqual('Location1');
+   });
+
+});
+
