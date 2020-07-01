@@ -9,8 +9,9 @@ render() {
     return(
     <div>
      <Header/>
-     <Button/>
-     <Button/>
+     <Button location="Portland"/>
+     <Button  location="Astoria"/>
+     <Button  />
      <Map/>
     </div>
     );
