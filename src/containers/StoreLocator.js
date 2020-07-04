@@ -5,13 +5,31 @@ import Map from '../components/Map';
 
 
 class StoreLocator extends Component {
+    constructor(props) {
+        super(props);
+        this.shops = [
+            {
+            "location" : "Portland",
+            "address" : "123 Portland"
+            },
+            {
+                "location" : "Astoria",
+                "address" : "123 Astoria"
+            },
+            {
+                "location" : "",
+                "address" : ""
+            }
+        ]
+    }
 render() {
+    let storeButtons = this.shops.map((shop,id)=> {
+        return(<Button key={id} location={shop.location}/>)
+    })
     return(
     <div>
      <Header/>
-     <Button location="Portland"/>
-     <Button  location="Astoria"/>
-     <Button  />
+    {storeButtons}
      <Map/>
     </div>
     );
