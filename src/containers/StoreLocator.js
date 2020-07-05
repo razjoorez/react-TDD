@@ -7,6 +7,9 @@ import Map from '../components/Map';
 class StoreLocator extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            currentMap : 'none.png'
+        };
         this.shops = [
             {
             "location" : "Portland",
@@ -23,6 +26,7 @@ class StoreLocator extends Component {
         ]
     }
 render() {
+    
     let storeButtons = this.shops.map((shop,id)=> {
         return(<Button key={id} location={shop.location}/>)
     })
@@ -30,7 +34,7 @@ render() {
     <div>
      <Header/>
     {storeButtons}
-     <Map/>
+     <Map imagename= {this.state.currentMap} location= {this.props.location}/>
     </div>
     );
 } 
