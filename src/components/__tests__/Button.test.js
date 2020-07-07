@@ -47,6 +47,15 @@ describe("When a no location is passed to it" , function() {
        const locName = mountedButton.find('.location-button');
         expect(locName.text()).toEqual('All Locations');
     });
+
+    it("calls a function passed to it when", ()=> {
+        const mockCallBack = jest.fn();
+        const mountedButtonWithCallBack = shallow(<Button handleClick ={mockCallBack} />);
+        mountedButtonWithCallBack.find('button').simulate('click');
+        expect(mockCallBack.mock.calls.length).toEqual(1);
+
+    });
  
  });
+
 

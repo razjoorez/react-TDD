@@ -8,12 +8,12 @@ describe("mapChooser", function() {
     //     expect(actual).toEqual(expected);
     // }),
     it("returns an image based on input given to it", function()  {
-        let expected = "astoria.jpg";
+        let expected = "astoria.png";
         let actual = mapChooser("astoria");
         expect(actual).toEqual(expected);
     }),
     it("returns default image when no input is given ", function()  {
-        let expected = "default.jpg";
+        let expected = "default.png";
         let actual = mapChooser("");
         expect(actual).toEqual(expected);
     })

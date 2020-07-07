@@ -3,7 +3,7 @@ function mapChooser(locationName) {
     if(!locationName) {
         locationName = "default";
     }
-    return (locationName + ".jpg");
+    return (locationName + ".png");
 }
 
 export default mapChooser;

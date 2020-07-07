@@ -1,6 +1,6 @@
 import React from 'react';
 import StoreLocator from '../../containers/StoreLocator';
-import { Shallow, shallow } from 'enzyme';
+import { Shallow, shallow, mount } from 'enzyme';
 import ReactDOM from 'react-dom';
 import Header from '../../components/Header';
 
@@ -38,6 +38,16 @@ it('render two buttons', () => {
 it('render a map', () => {
     const maps = mountedStoreLocator.find('Map');
     expect(maps.length).toBe(1);
+});
+
+});
+describe("chooseMap", function() {
+
+it('updates this.state.currentMap using the location passed to it', () => {
+    let mountedStoreLocator = shallow(<StoreLocator/>);
+    let mockEvent = {target: {value: 'testland'}};
+    mountedStoreLocator.instance().chooseMap(mockEvent);
+    expect(mountedStoreLocator.instance().state.currentMap).toBe('testland.png');
 });
 
 });
