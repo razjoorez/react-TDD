@@ -48,7 +48,7 @@ describe("When a no location is passed to it" , function() {
         expect(locName.text()).toEqual('All Locations');
     });
 
-    it("calls a function passed to it when", ()=> {
+    it("calls a function passed to it when clicked", ()=> {
         const mockCallBack = jest.fn();
         const mountedButtonWithCallBack = shallow(<Button handleClick ={mockCallBack} />);
         mountedButtonWithCallBack.find('button').simulate('click');
